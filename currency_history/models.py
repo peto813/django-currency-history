@@ -66,6 +66,7 @@ class CurrencyRate(models.Model):
         Currency,
         verbose_name=_('To currency'),
         related_name='rates_to',
+        on_delete = models.CASCADE
     )
 
     fixed_rate = models.FloatField(
@@ -103,6 +104,7 @@ class CurrencyRateHistory(models.Model):
         CurrencyRate,
         verbose_name=_('Rate'),
         related_name='history',
+        on_delete = models.CASCADE
     )
 
     date = models.DateTimeField(
