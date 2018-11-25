@@ -59,6 +59,7 @@ class CurrencyRate(models.Model):
         Currency,
         verbose_name=_('From currency'),
         related_name='rates_from',
+        on_delete = models.CASCADE
     )
 
     to_currency = models.ForeignKey(
