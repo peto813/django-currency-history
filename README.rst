@@ -8,17 +8,11 @@ A reusable Django app that tracks currency rates.
 Installation
 ------------
 
-To get the latest stable release from PyPi
-
-.. code-block:: bash
-
-    pip install django-currency-history
-
 To get the latest commit from GitHub
 
 .. code-block:: bash
 
-    pip install -e git+git://github.com/bitmazk/django-currency-history.git#egg=currency_history
+    pip install -e git+https://github.com/peto813/django-currency-history.git#egg=currency_history
 
 TODO: Describe further installation steps (edit / remove the examples below):
 
