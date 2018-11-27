@@ -7,7 +7,7 @@ from ..models import CurrencyRate
 register = template.Library()
 
 
-@register.assignment_tag()
+@register.simple_tag()
 def convert_currency(amount, from_currency, to_currency):
     '''
     Converts currencies.
